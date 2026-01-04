@@ -1,0 +1,6 @@
+# requirements.txt (minimum)
+streamlit
+pandas
+pypdf
+pdf2image
+Pillow
