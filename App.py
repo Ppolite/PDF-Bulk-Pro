@@ -263,7 +263,32 @@ tool = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.caption("Processed in-memory. No accounts needed.")
 
+st.markdown("---")
+st.subheader("📋 Pricing")
 
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("### 🟢 Free")
+    st.markdown(
+        "- Up to **3 files** per action\n"
+        "- Basic tools\n"
+        "- No signup required"
+    )
+    st.markdown("**$0 forever**")
+
+with col2:
+    st.markdown("### 🔵 Pro (Lifetime)")
+    st.markdown(
+        "- Unlimited files\n"
+        "- All PDF tools\n"
+        "- High-quality exports\n"
+        "- Bulk ZIP downloads\n"
+        "- Commercial use\n"
+        "- No watermarks"
+    )
+    st.markdown("**$69 one-time**")
+    st.markdown("[Get Lifetime Access](YOUR_STRIPE_LINK)")
 # =========================
 # MAIN UI
 # =========================
