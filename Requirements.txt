@@ -4,3 +4,4 @@ pandas
 pypdf
 pdf2image
 Pillow
+
