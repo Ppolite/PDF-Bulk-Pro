@@ -9,7 +9,8 @@
 #
 # NOTE: For Streamlit Cloud, pdf2image requires poppler which Streamlit Cloud may NOT have.
 # If poppler isn't available, the app will show a friendly error for PDF→Images.
-
+import importlib.util, streamlit as st
+st.write("pypdf spec:", importlib.util.find_spec("pypdf"))
 import io
 import zipfile
 from io import BytesIO
