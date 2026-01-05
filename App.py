@@ -17,7 +17,8 @@ import time
 
 import streamlit as st
 import pandas as pd
-from pypdf import PdfReader, PdfWriter
+from pypdf import PdfReader
+import PdfWriter
 
 # Optional dependency: pdf2image (only used for PDF→Images)
 try:
