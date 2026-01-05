@@ -1,42 +1,29 @@
 import streamlit as st
-import pandas as pd
 
+st.set_page_config(
+    page_title="PDF Pro | Bulk Toolkit",
+    page_icon="📑",
+    layout="centered"
+)
+
+import pandas as pd
 import importlib.util
 import io
 import zipfile
 import time
 from io import BytesIO
+
 from pypdf import PdfReader, PdfWriter
 
-# Optional dependency: pdf2image (only used for PDF→Images)
+# Optional dependency: pdf2image (only used for PDF->Images)
 try:
     from pdf2image import convert_from_bytes
     PDF2IMAGE_AVAILABLE = True
 except Exception:
     PDF2IMAGE_AVAILABLE = False
 
-st.set_page_config(page_title="PDF Pro | Bulk Toolkit", page_icon="📑", layout="centered")
-
-# (Optional debug — keep BELOW set_page_config)
+# OPTIONAL debug (keep BELOW set_page_config)
 # st.write("pypdf spec:", importlib.util.find_spec("pypdf"))
-
-# Optional dependency: pdf2image (only used for PDF→Images)
-try:
-    from pdf2image import convert_from_bytes
-    PDF2IMAGE_AVAILABLE = True
-except Exception:
-    PDF2IMAGE_AVAILABLE = False
-
-
-# =========================
-# MUST be first Streamlit call
-# =========================
-st.set_page_config(page_title="PDF Pro | Bulk Toolkit", page_icon="📑", layout="centered")
-
-
-# =========================
-# STYLE + BANNER (EDIT LINKS)
-# =========================
 PDF_PRO_LIFETIME_STRIPE_LINK = "PASTE_YOUR_PDF_PRO_STRIPE_LINK_HERE"
 
 st.markdown(
