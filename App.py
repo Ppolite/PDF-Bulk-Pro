@@ -1,24 +1,24 @@
-# app.py — PDF Pro (Streamlit)
-# ----------------------------
-# Features:
-# - Merge PDFs (multi-file)
-# - Split PDF (each page -> separate PDF in ZIP)
-# - PDF → Images (JPG/PNG pages in ZIP)  [requires poppler on host]
-# - Compress PDF (lossless-ish: compress content streams)
-# - License gating via Google Sheet (published CSV)
-#
-# NOTE: For Streamlit Cloud, pdf2image requires poppler which Streamlit Cloud may NOT have.
-# If poppler isn't available, the app will show a friendly error for PDF→Images.
-import importlib.util, streamlit as st
-st.write("pypdf spec:", importlib.util.find_spec("pypdf"))
-import io
-import zipfile
-from io import BytesIO
-import time
-
 import streamlit as st
 import pandas as pd
+
+import importlib.util
+import io
+import zipfile
+import time
+from io import BytesIO
 from pypdf import PdfReader, PdfWriter
+
+# Optional dependency: pdf2image (only used for PDF→Images)
+try:
+    from pdf2image import convert_from_bytes
+    PDF2IMAGE_AVAILABLE = True
+except Exception:
+    PDF2IMAGE_AVAILABLE = False
+
+st.set_page_config(page_title="PDF Pro | Bulk Toolkit", page_icon="📑", layout="centered")
+
+# (Optional debug — keep BELOW set_page_config)
+# st.write("pypdf spec:", importlib.util.find_spec("pypdf"))
 
 # Optional dependency: pdf2image (only used for PDF→Images)
 try:
