@@ -24,7 +24,7 @@ except Exception:
 
 # OPTIONAL debug (keep BELOW set_page_config)
 # st.write("pypdf spec:", importlib.util.find_spec("pypdf"))
-PDF_PRO_LIFETIME_STRIPE_LINK = "PASTE_YOUR_PDF_PRO_STRIPE_LINK_HERE"
+PDF_PRO_LIFETIME_STRIPE_LINK = "https://buy.stripe.com/aFa28reIA6Ifbwr8g10gw07"
 
 st.markdown(
     """
@@ -83,7 +83,7 @@ st.markdown(
 # LICENSE SYSTEM (Google Sheet CSV)
 # =========================
 # Put your PDF Pro license sheet (published as CSV) here
-LICENSE_SHEET_URL = "PASTE_YOUR_PUBLISHED_GOOGLE_SHEET_CSV_URL_HERE"
+LICENSE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLIyIqosW_213SCrcefv34G-1V7LLlM4QXLZA9weZjD3uEEIvokcGbp6U6E5_ys276vO2GP18LhEca/pub?output=csv"
 
 # Recommended sheet columns (case-insensitive):
 # key, tier, email, created_at, app_id(optional)
