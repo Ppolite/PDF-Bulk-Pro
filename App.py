@@ -72,7 +72,7 @@ st.markdown(
     <strong>📑 PDF Pro Lifetime Deal:</strong> Stop paying Adobe for basic tools.<br/>
     Merge, split, compress, export pages — fast, clean, and simple.
   </div>
-  <a href="{PDF_PRO_LIFETIME_STRIPE_LINK}" target="_blank">Get Lifetime Access →</a>
+  <a href="{https://buy.stripe.com/aFa28reIA6Ifbwr8g10gw07}" target="_blank">Get Lifetime Access →</a>
 </div>
 """,
     unsafe_allow_html=True,
