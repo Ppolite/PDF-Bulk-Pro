@@ -77,7 +77,7 @@ st.markdown("""
 }
 </style>
 
-<a href="https://buy.stripe.com/aFa28rEIAlfBwr8g10gw07" target="_blank">
+<a href="https://buy.stripe.com/aFa28reIA6Ifbwr8g10gw07" target="_blank">
     <button class="buy-button">Get Lifetime Access →</button>
 </a>
 """, unsafe_allow_html=True)
