@@ -65,18 +65,21 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown(
-    f"""
-<div class="launch-banner">
-  <div>
-    <strong>📑 PDF Pro Lifetime Deal:</strong> Stop paying Adobe for basic tools.<br/>
-    Merge, split, compress, export pages — fast, clean, and simple.
-  </div>
-  <a href="{https://buy.stripe.com/aFa28reIA6Ifbwr8g10gw07}" target="_blank">Get Lifetime Access →</a>
-</div>
-""",
-    unsafe_allow_html=True,
-)
+st.markdown("""
+<a href="https://buy.stripe.com/aFa28rEIAlfBwr8g10gw07" target="_blank">
+    <button style="
+        background:#ef4444;
+        color:white;
+        padding:10px 16px;
+        border:none;
+        border-radius:6px;
+        font-weight:bold;
+        cursor:pointer;
+    ">
+        Get Lifetime Access →
+    </button>
+</a>
+""", unsafe_allow_html=True)
 
 
 # =========================
